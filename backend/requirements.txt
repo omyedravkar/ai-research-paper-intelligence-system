@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+datasets
+pandas
+numpy
+sentence-transformers
+scikit-learn
+faiss-cpu
+transformers==4.46.3
+torch
+keybert==0.8.5
+spacy
+python-dotenv
