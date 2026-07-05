@@ -24,6 +24,53 @@ making the retrieved papers easier to understand and analyze.
 
 ---
 
+# Application Preview
+
+## Home Page
+
+<p align="center">
+  <img src="frontend/src/assets/Home.png" width="90%">
+</p>
+
+<p align="center">
+<b>Figure 1.</b> Home page of the AI Research Paper Intelligence System.
+</p>
+
+---
+
+## Loading page 
+
+<p align="center">
+  <img src="frontend/src/assets/Loading Page.png" width="90%">
+</p>
+
+<p align="center">
+<b>Figure 2.</b> Visible while loading the result
+</p>
+
+---
+
+## Search Results
+
+<p align="center">
+  <img src="frontend/src/assets/img1.png" width="90%" >
+</p>
+<p align="center">
+  <img src="frontend/src/assets/img2.png" width="90%">
+</p>
+<p align="center">
+  <img src="frontend/src/assets/img3.png" width="90%" >
+</p>
+<p align="center">
+  <img src="frontend/src/assets/img4.png" width="90%">
+</p>
+
+<p align="center">
+<b>Figure 3.</b> Search results showing summary, keywords, named entities, classification, and similarity score.
+</p>
+
+---
+
 # Objectives
 
 The primary objectives of this internship project are:
@@ -606,6 +653,33 @@ The project combines modern Artificial Intelligence, Natural Language Processing
 | Named Entity Recognition | spaCy | Entity extraction from research papers |
 | Keyword Extraction | KeyBERT | Important keyword identification |
 
+---
+
+# Project Structure
+
+```text
+AI-Research-Paper-Intelligence-System
+│
+├── backend/
+│   ├── data/
+│   ├── models/
+│   ├── search/
+│   ├── app.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── notebook/
+│
+├── docs/
+│   └── images/
+│
+└── README.md
+```
 ---
 
 # Skills and Concepts Learned
