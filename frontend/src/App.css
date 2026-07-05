@@ -184,3 +184,21 @@ h1{
     color:#2563eb;
 
 }
+
+.category{
+
+    margin-top:10px;
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+}
+
+.confidence{
+
+    color:#6b7280;
+
+    margin-bottom:20px;
+
+}

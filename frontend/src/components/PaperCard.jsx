@@ -8,8 +8,16 @@ function PaperCard({ paper }) {
 
             <p className="similarity">
 
-                Similarity : {(paper.similarity*100).toFixed(2)}%
+                Similarity : {(paper.similarity * 100).toFixed(2)}%
 
+            </p>
+
+            <p className="category">
+                Category : {paper.classification}
+            </p>
+
+            <p className="confidence">
+                Confidence : {(paper.classification_score * 100).toFixed(1)}%
             </p>
 
             <h4>Summary</h4>
@@ -20,7 +28,7 @@ function PaperCard({ paper }) {
 
             <div className="badges">
 
-                {paper.keywords.map((keyword,index)=>(
+                {paper.keywords.map((keyword, index) => (
 
                     <span
                         key={index}
@@ -39,7 +47,7 @@ function PaperCard({ paper }) {
 
             <div className="badges">
 
-                {paper.entities.map((entity,index)=>(
+                {paper.entities.map((entity, index) => (
 
                     <span
                         key={index}

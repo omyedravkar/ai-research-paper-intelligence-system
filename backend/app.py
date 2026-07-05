@@ -8,7 +8,7 @@ from search.search_engine import search
 from models.summarizer import summarize
 from models.keyword_extractor import extract_keywords
 from models.ner import extract_entities
-
+from models.classification import classify_paper
 app = FastAPI()
 
 app.add_middleware(
@@ -47,6 +47,8 @@ def search_papers(query: str):
 
         entities = extract_entities(paper["abstract"])
 
+        classification = classify_paper(paper["abstract"])
+
         results.append({
 
             "title": paper["title"],
@@ -58,9 +60,12 @@ def search_papers(query: str):
             "keywords": keywords,
 
             "entities": entities,
+             
+            "classification": classification["category"],
 
+            "classification_score": classification["confidence"],
+            
             "similarity": float(score)
-
         })
 
     return results
